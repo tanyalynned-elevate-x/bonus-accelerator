@@ -177,7 +177,7 @@ if "recent" not in st.session_state:
 cfg: ProgramConfig = st.session_state.config
 
 st.title("Global Sales Bonus Accelerator Dashboard")
-st.caption("New Product Launch · Rules-driven, region/role aware, quarterly FX.")
+st.caption("Create a Better Tomorrow.")
 
 tab_calc, tab_config, tab_recent = st.tabs(["Calculator", "Configuration", "Recent Results"])
 
