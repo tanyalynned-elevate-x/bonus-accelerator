@@ -257,7 +257,7 @@ with tab_calc:
     d4, d5, d6 = st.columns(3)
     launch_date = d4.date_input("Product Launch/Announcement Date", value=dt.date.today() - dt.timedelta(days=30))
     is_new = d5.toggle("New Customer", value=True, key="new_customer")
-    push_flag = d6.toggle("Push Product", value=True, key=push_product)
+    push_flag = d6.toggle("Push Product", value=True, key="push_product")
 
     sfdc_po_id = st.text_input("SFDC PO / Opportunity ID", placeholder="006xx00000ABC123")
 
