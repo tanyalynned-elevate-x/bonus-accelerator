@@ -176,15 +176,18 @@ if "recent" not in st.session_state:
 
 cfg: ProgramConfig = st.session_state.config
 
-LOGO_PATH = "logo.png" 
+LOGO_PATH = "logo.png"
 
-col1, col2 = st.columns([0.08, 0.92])
-with col1:
-    st.image(LOGO_PATH, use_column_width=True)  
-with col2:
-    st.title("Global Sales Bonus Accelerator Dashboard")
-
+c1, c2 = st.columns([1, 14])
+with c1:
+    st.image(LOGO_PATH, width=48) 
+with c2:
+    st.markdown(
+        "<h1 style='margin:0;'>Global Sales Bonus Accelerator Dashboard</h1>",
+        unsafe_allow_html=True,
+    )
 st.caption("Create a Better Tomorrow....")
+
 
 tab_calc, tab_config, tab_recent = st.tabs(["Calculator", "Configuration", "Recent Results"])
 
