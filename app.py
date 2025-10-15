@@ -163,7 +163,11 @@ def default_config() -> ProgramConfig:
         ],
     )
 
-st.set_page_config(page_title="Bonus Accelerator Dashboard", page_icon="💰", layout="wide")
+st.set_page_config(
+    page_title=("Global Sales Bonus Accelerator Dashboard"),
+    layout="wide",  
+
+)
 
 if "config" not in st.session_state:
     st.session_state.config = default_config()
@@ -172,7 +176,7 @@ if "recent" not in st.session_state:
 
 cfg: ProgramConfig = st.session_state.config
 
-st.title("💰 Global Sales Bonus Accelerator Dashboard")
+st.title("Global Sales Bonus Accelerator Dashboard")
 st.caption("New Product Launch · Rules-driven, region/role aware, quarterly FX.")
 
 tab_calc, tab_config, tab_recent = st.tabs(["Calculator", "Configuration", "Recent Results"])
